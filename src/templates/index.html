@@ -1,0 +1,162 @@
+{% extends "layout.html" %}
+{% from "components/fieldset.html" import fieldset %}
+{% from "components/button.html" import button %}
+
+{% block content %}
+  <div class="flex flex-col gap-4">
+    {% call fieldset("whoami") %}
+      <div class="flex flex-col-reverse md:flex-row gap-4 text-lg md:items-start">
+        <div class="flex flex-col gap-3 min-w-0">
+          <p class="m-0">
+            I'm Kushal Singh, a backend-focused software engineer with 5+ years of
+            experience building and modernizing enterprise applications across
+            healthcare, finance, and SaaS.
+          </p>
+          <p class="m-0">
+            I work mostly in Java, Spring Boot, microservices, cloud-native
+            systems, and production operations, with additional full-stack
+            experience in React and TypeScript.
+          </p>
+        </div>
+        <img
+          src="/assets/profile.jpg"
+          alt="Portrait of Kushal Singh"
+          class="w-full max-w-[220px] md:w-48 border border-black/30 dark:border-white/25 shadow-[5px_5px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[5px_5px_0px_1px_rgba(255,255,255,0.25)] self-center md:self-start"
+        />
+      </div>
+    {% endcall %}
+
+    {% call fieldset("cat ~/experience.md") %}
+      <div class="grid gap-3 text-lg">
+        <article class="border border-black/30 dark:border-white/25 p-3 bg-white dark:bg-transparent">
+          <div class="flex items-start gap-3">
+            <img src="/assets/experience/kaiser-permanente.webp" alt="Kaiser Permanente logo" class="w-16 h-16 object-contain shrink-0" />
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                <div>
+                  <h2 class="text-xl font-bold m-0">Kaiser Permanente</h2>
+                  <p class="m-0">Sr. Software Engineer</p>
+                  <p class="m-0 text-sm opacity-70">Pleasanton, CA</p>
+                </div>
+                <p class="m-0 text-sm opacity-70 shrink-0">Jul 2022 – Present</p>
+              </div>
+              <details class="mt-2">
+                <summary class="inline-flex cursor-pointer list-none items-center justify-center border border-black dark:border-white px-3 h-7 text-sm font-bold shadow-[2px_2px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[2px_2px_0px_1px_rgba(255,255,255,0.35)] hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">details</summary>
+                <ul class="mt-3 mb-0 list-disc ps-5">
+                  <li>Build Quarkus and Spring Boot microservices for high-volume healthcare platforms.</li>
+                  <li>Collaborate with platform and support teams on backend integrations, incident triage, and service workflows.</li>
+                  <li>Lead Azure AKS and Kubernetes deployments, autoscaling, monitoring, and production troubleshooting.</li>
+                  <li>Develop distributed messaging systems that reduce coupling and improve resiliency.</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </article>
+
+        <article class="border border-black/30 dark:border-white/25 p-3 bg-white dark:bg-transparent">
+          <div class="flex items-start gap-3">
+            <img src="/assets/experience/imt-logo.webp" alt="IMT Insurance logo" class="w-16 h-16 object-contain shrink-0" />
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                <div>
+                  <h2 class="text-xl font-bold m-0">IMT Insurance</h2>
+                  <p class="m-0">Software Engineer</p>
+                  <p class="m-0 text-sm opacity-70">West Des Moines, IA</p>
+                </div>
+                <p class="m-0 text-sm opacity-70 shrink-0">May 2021 – Apr 2022</p>
+              </div>
+              <details class="mt-2">
+                <summary class="inline-flex cursor-pointer list-none items-center justify-center border border-black dark:border-white px-3 h-7 text-sm font-bold shadow-[2px_2px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[2px_2px_0px_1px_rgba(255,255,255,0.35)] hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">details</summary>
+                <ul class="mt-3 mb-0 list-disc ps-5">
+                  <li>Developed insurance platform features across policy administration, billing, and reporting workflows.</li>
+                  <li>Optimized SQL queries, joins, and stored procedures for reporting, premium calculations, and integrations.</li>
+                  <li>Improved application reliability and performance through bug fixes and targeted enhancements.</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </article>
+
+        <article class="border border-black/30 dark:border-white/25 p-3 bg-white dark:bg-transparent">
+          <div class="flex items-start gap-3">
+            <img src="/assets/experience/delagetllc.png" alt="Delaget logo" class="w-16 h-16 object-contain shrink-0" />
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                <div>
+                  <h2 class="text-xl font-bold m-0">Delaget LLC</h2>
+                  <p class="m-0">Full Stack Developer</p>
+                  <p class="m-0 text-sm opacity-70">St. Louis Park, MN</p>
+                </div>
+                <p class="m-0 text-sm opacity-70 shrink-0">May 2019 – Apr 2020</p>
+              </div>
+              <details class="mt-2">
+                <summary class="inline-flex cursor-pointer list-none items-center justify-center border border-black dark:border-white px-3 h-7 text-sm font-bold shadow-[2px_2px_0px_1px_rgba(0,0,0,0.5)] dark:shadow-[2px_2px_0px_1px_rgba(255,255,255,0.35)] hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">details</summary>
+                <ul class="mt-3 mb-0 list-disc ps-5">
+                  <li>Built restaurant analytics applications with ASP.NET Core, REST APIs, React, and TypeScript.</li>
+                  <li>Created reusable dashboard components and improved high-volume reporting workflows.</li>
+                  <li>Worked with product and business teams to troubleshoot production issues and improve reliability.</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </article>
+      </div>
+    {% endcall %}
+
+    {% call fieldset("ls ~/projects") %}
+      {{ lists.projects|safe }}
+    {% endcall %}
+
+    {% call fieldset("cat ~/education.md") %}
+      <div class="grid gap-3 text-lg">
+        <article class="border border-black/30 dark:border-white/25 p-3 bg-white dark:bg-transparent">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div class="flex items-start gap-3">
+              <img src="/assets/education/st-cloud-state.png" alt="St. Cloud State University logo" class="w-14 h-14 object-contain shrink-0" />
+              <div>
+                <h2 class="text-xl font-bold m-0">St. Cloud State University</h2>
+                <p class="m-0">Degree: Master of Science in Computer Science</p>
+                <p class="m-0 text-sm opacity-70">St. Cloud, MN</p>
+              </div>
+            </div>
+            <p class="m-0 text-sm opacity-70">Aug 2020 – May 2022</p>
+          </div>
+        </article>
+
+        <article class="border border-black/30 dark:border-white/25 p-3 bg-white dark:bg-transparent">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div class="flex items-start gap-3">
+              <img src="/assets/education/st-cloud-state.png" alt="St. Cloud State University logo" class="w-14 h-14 object-contain shrink-0" />
+              <div>
+                <h2 class="text-xl font-bold m-0">St. Cloud State University</h2>
+                <p class="m-0">Degree: Bachelor of Science</p>
+                <p class="m-0">Major: Computer Science</p>
+                <p class="m-0 text-sm opacity-70">St. Cloud, MN</p>
+              </div>
+            </div>
+            <p class="m-0 text-sm opacity-70">Aug 2016 – May 2020</p>
+          </div>
+        </article>
+      </div>
+    {% endcall %}
+
+    {% call fieldset("cat ~/random.md") %}
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        {% call button("/random/toolbox", "w-full h-9 text-base font-bold me-0 !justify-start") %}
+          <span>toolbox</span>
+        {% endcall %}
+        {% call button("/random/wins", "w-full h-9 text-base font-bold me-0 !justify-start") %}
+          <span>wins</span>
+        {% endcall %}
+      </div>
+    {% endcall %}
+
+    {% call fieldset("cat ~/links.md") %}
+      <ul class="m-0 list-disc ps-5 text-lg">
+        <li><a href="https://github.com/Xkushal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/kushal-singh-b7358223a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:kushalsingh.business@gmail.com">Email</a></li>
+      </ul>
+    {% endcall %}
+  </div>
+{% endblock %}

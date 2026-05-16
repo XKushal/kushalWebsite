@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Book Lending App</title><desc id="desc">Illustration of stacked books</desc>
+  <rect width="1200" height="800" fill="#fff7ed"/>
+  <rect x="260" y="470" width="680" height="92" rx="16" fill="#ea580c"/>
+  <rect x="300" y="360" width="600" height="92" rx="16" fill="#fb923c"/>
+  <rect x="340" y="250" width="520" height="92" rx="16" fill="#fdba74"/>
+  <path d="M395 296h410M355 406h490M315 516h570" stroke="#7c2d12" stroke-width="18" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">StrengthLens</title><desc id="desc">Abstract mobile app illustration</desc>
+  <rect width="1200" height="800" fill="#eef2ff"/>
+  <rect x="430" y="110" width="340" height="580" rx="42" fill="#111827"/>
+  <rect x="455" y="145" width="290" height="510" rx="28" fill="#ffffff"/>
+  <circle cx="600" cy="250" r="74" fill="#4f46e5"/>
+  <path d="M535 395h130M520 455h160M550 515h100" stroke="#111827" stroke-width="24" stroke-linecap="round"/>
+</svg>

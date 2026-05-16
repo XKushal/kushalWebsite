@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Student Election Voting App</title><desc id="desc">Illustration of a ballot box</desc>
+  <rect width="1200" height="800" fill="#ecfeff"/>
+  <rect x="330" y="300" width="540" height="310" rx="24" fill="#0f766e"/>
+  <rect x="420" y="220" width="360" height="120" rx="16" fill="#99f6e4"/>
+  <rect x="465" y="180" width="270" height="40" rx="12" fill="#134e4a"/>
+  <path d="M480 430l72 72 168-180" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
